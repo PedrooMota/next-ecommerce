@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import Header from "../../components/header";
-import CartProvider from "@/context/cart-context";
+import { ReactNode } from 'react'
+import Header from '../../components/header'
+import CartProvider from '@/context/cart-context'
 
 export default function StoreLayout({ children }: { children: ReactNode }) {
   return (
