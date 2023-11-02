@@ -1,3 +1,3 @@
 export default function HomeLoading () {
-  return <div>carregando...</div>
+  return <div>Carregando dados da Home</div>
 }
