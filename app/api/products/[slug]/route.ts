@@ -3,16 +3,15 @@ import z from 'zod'
 
 export async function GET(
   request: Request,
-  { params }: {params: { slug: string }}
+  { params }: { params: { slug: string } },
 ) {
-
   await new Promise((resolve) => setTimeout(resolve, 3000))
 
   const slug = z.string().parse(params.slug)
 
-  const product = data.products.find((product) => product.slug == slug)
+  const product = data.products.find((product) => product.slug === slug)
 
-  if(!product) {
+  if (!product) {
     return Response.json({ message: 'Product not found.' }, { status: 400 })
   }
 
